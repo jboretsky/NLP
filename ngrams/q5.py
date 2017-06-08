@@ -28,7 +28,7 @@ def generate_sentence( probs ):
 
     return sent
 
-def partA():
+def getCommonNgrams():
     with open('t8.shakespeare.txt', 'r') as f:
         text = f.read()
 
@@ -45,7 +45,7 @@ def partA():
     print( common_unigrams )
     print( common_bigrams )
 
-def partB():
+def generateSentences():
     with open('t8.shakespeare.txt', 'r') as f:
         text = f.read()
 
@@ -75,5 +75,5 @@ def partB():
         print sentence
 
 if __name__ == '__main__':
-    partA()
-    partB()
+    getCommonNgrams()
+    generateSentences()
